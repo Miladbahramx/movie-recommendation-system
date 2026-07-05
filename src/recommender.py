@@ -1,9 +1,12 @@
+import os
 import pickle
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-movies = pickle.load(open("D:/Python/GIT/movie recommendation system/models/movies.pkl", "rb"))
+movies = pickle.load(open(os.path.join(BASE_DIR, "models", "movies.pkl"), "rb"))
 
 cv = CountVectorizer(max_features=5000, stop_words="english")
 
