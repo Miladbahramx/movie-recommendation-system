@@ -27,4 +27,4 @@ notebooks/
 
 Live Demo
 
-https://movie-recommendation-system-2j6h.onrender.com
+https://huggingface.co/spaces/Milaadi/movie-recommendation
